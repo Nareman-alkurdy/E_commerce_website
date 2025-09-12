@@ -1,0 +1,111 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="cc.css">
+
+</head>
+<body>
+   <header id="top-nav">
+        <nav> 
+
+
+            <!--logo -->
+
+            <a class="header-logo" href="#top-nav">
+                <img src="assets/itunes.png" alt="logo" width="40" height="40">
+            </a> 
+
+            <!--Links  -->
+
+        <div class="links">
+            <a href="#top-nav">Home</a>
+            <a href="#main-list">Products</a>
+            <a href="#popular-section">Recommended</a>
+        </div>
+
+            <!--search bar-->
+            
+        <div class="search-bar">
+          <button id="button-click">
+            <img src="assets/search.png" alt="search-icon" width="15" height="15">
+          </button>
+          <input type="text" placeholder="Search.." id="search-input">
+        </div> 
+            <!-- cart -->
+             
+         <button class="cart-button" id="cartBtn" >
+          <img src="assets/bag.png" alt="cart-icon" width="25" height="25">
+          <span class="cart-button__badge" id="cartCount">0</span>
+         </button>
+         <a id="back-to-top" class="back-to-top-button" href="">sign in </a>
+        </nav>
+        </header> 
+
+        <!-- Hero Section-->
+
+         <section class="hero-container">
+            <div class="hero-container__text">
+                <h1 class="hero-container__text-title">Power Up Your Wrok</h1>
+                <p class="hero-container__text-desc">Discover the Latest laptops designed for speed,style,and performance<br>
+                    all at the best prices</p>
+                <a class="hero-container__text-button" href="#main-list">shop now</a>
+            </div>
+        </section> 
+
+
+
+
+<main class="main-list" id="main-list"> </main>
+<!-- قسم الى قسمين  -->
+<section id="recommended-section">
+  <h2>Featured Products</h2>
+  <div class="main-list" id="recommended-list"></div>
+</section>
+
+<section id="popular-section">
+  <h2>Recommended Products</h2>
+  <div class="main-list" id="popular-list"></div>
+</section>
+
+<!-- Sidebar -->
+  <aside id="cart-sidebar" class="cart-sidebar hidden">
+  <div class="cart-sidebar__header">
+    <h2>My Basket</h2>
+    <button id="close-cart" class="cart-sidebar__close" >close</button>
+   
+     <button id="clear-cart" class="cart-sidebar_actions">Clear All</button>
+      
+  </div>
+  
+  <div id="cart-items-container"></div> 
+</aside>
+
+<!--  -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>أفضل مكان لتسوّق منتجاتك المفضلة بكل سهولة وأمان.</p>
+    <ul class="socials">
+      <li><a href="#"><img src="assets/instagram (1).png" width="30" height="30" ></a></li>
+      <li><a href="#"><img src="assets/facebook (3).png" width="30" height="30" ></a></li>
+      <li><a href="#"><img src="assets/whatsapp.png" width="30" height="30"></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> . جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+<!--  -->
+
+   <script src="script.js"></script> 
+    <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+   
+   </body>
+
+</html>
